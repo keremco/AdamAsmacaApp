@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace AdamAsmacaApp
 {
     public partial class Form1 : Form
@@ -11,5 +13,15 @@ namespace AdamAsmacaApp
         {
 
         }
+
+        private void tbHarf_TextChanged(object sender, EventArgs e)
+        {
+            string harf = tbHarf.Text;
+            if (string.IsNullOrWhiteSpace(harf))
+            {
+                lBilgi.Visible = true;
+                lBilgi.Text = "Harf Giriniz";
+            }
+        
     }
 }

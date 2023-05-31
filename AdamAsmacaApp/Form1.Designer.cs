@@ -32,6 +32,7 @@
             tbKelime = new TextBox();
             label2 = new Label();
             tbHarf = new TextBox();
+            lBilgi = new Label();
             SuspendLayout();
             // 
             // label1
@@ -67,6 +68,17 @@
             tbHarf.Name = "tbHarf";
             tbHarf.Size = new Size(221, 23);
             tbHarf.TabIndex = 1;
+            tbHarf.TextChanged += tbHarf_TextChanged;
+            // 
+            // lBilgi
+            // 
+            lBilgi.AutoSize = true;
+            lBilgi.Location = new Point(12, 77);
+            lBilgi.Name = "lBilgi";
+            lBilgi.Size = new Size(33, 15);
+            lBilgi.TabIndex = 0;
+            lBilgi.Text = "lBilgi";
+            lBilgi.Visible = false;
             // 
             // Form1
             // 
@@ -75,6 +87,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(tbHarf);
             Controls.Add(tbKelime);
+            Controls.Add(lBilgi);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
@@ -90,5 +103,6 @@
         private TextBox tbKelime;
         private Label label2;
         private TextBox tbHarf;
+        private Label lBilgi;
     }
 }
