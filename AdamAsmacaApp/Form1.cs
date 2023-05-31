@@ -16,12 +16,21 @@ namespace AdamAsmacaApp
 
         private void tbHarf_TextChanged(object sender, EventArgs e)
         {
+            TahminEt();
+
+        }
+
+        private void TahminEt()
+        {
+            lBilgi.Visible = false;
             string harf = tbHarf.Text;
             if (string.IsNullOrWhiteSpace(harf))
             {
                 lBilgi.Visible = true;
                 lBilgi.Text = "Harf Giriniz";
+                lBilgi.ForeColor = Color.Red;
+
             }
-        
+        }
     }
 }
