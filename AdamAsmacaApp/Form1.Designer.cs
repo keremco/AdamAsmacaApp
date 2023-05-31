@@ -63,6 +63,7 @@
             // 
             // tbHarf
             // 
+            tbHarf.CharacterCasing = CharacterCasing.Upper;
             tbHarf.Location = new Point(61, 35);
             tbHarf.MaxLength = 1;
             tbHarf.Name = "tbHarf";
